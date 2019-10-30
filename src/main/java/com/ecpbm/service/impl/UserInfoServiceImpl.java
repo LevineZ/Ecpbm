@@ -16,6 +16,7 @@ import com.ecpbm.service.UserInfoService;
 
 @Service("userInfoService")
 @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT)
+//事务管理，Propagation用于指定事务传播行为
 public class UserInfoServiceImpl implements UserInfoService {
 
 	@Autowired

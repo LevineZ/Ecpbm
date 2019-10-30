@@ -1,5 +1,9 @@
 package com.ecpbm.pojo;
 
+/**
+ * 系统功能信息
+ */
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -52,6 +56,12 @@ public class Functions implements Comparable<Functions> {
 		this.ais = ais;
 	}
 
+
+	/**
+	 * 在排序时将两个Function对象的id进行比较，根据比较结果返回数值
+	 * @param arg0
+	 * @return
+	 */
 	@Override
 	public int compareTo(Functions arg0) {
 		return ((Integer) this.getId()).compareTo((Integer) (arg0.getId()));

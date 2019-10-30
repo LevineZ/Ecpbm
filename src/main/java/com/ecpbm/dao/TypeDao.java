@@ -2,10 +2,7 @@ package com.ecpbm.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 import com.ecpbm.pojo.Type;
 
@@ -25,5 +22,9 @@ public interface TypeDao {
 	
 	// 更新商品类型
 	@Update("update type set name = #{name} where  id = #{id}")
-	public int update(Type type);	
+	public int update(Type type);
+
+	//删除
+	@Delete("delete * from type where id =#{id}")
+	int selectByid(int id);
 }

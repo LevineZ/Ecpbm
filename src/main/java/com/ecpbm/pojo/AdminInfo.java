@@ -1,5 +1,9 @@
 package com.ecpbm.pojo;
 
+/**
+ * 管理员信息
+ */
+
 import java.util.List;
 
 public class AdminInfo {

@@ -7,10 +7,10 @@ import com.ecpbm.pojo.UserInfo;
 
 public interface UserInfoService {
 	// 获取合法客户
-	public List<UserInfo> getValidUser();
+	List<UserInfo> getValidUser();
 
 	// 根据用户编号查询客户
-	public UserInfo getUserInfoById(int id);
+	UserInfo getUserInfoById(int id);
 
 	// 分页显示客户
 	List<UserInfo> findUserInfo(UserInfo userInfo, Pager pager);

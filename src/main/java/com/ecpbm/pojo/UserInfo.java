@@ -1,5 +1,9 @@
 package com.ecpbm.pojo;
 
+/**
+ * 封装客户信息
+ */
+
 public class UserInfo {
 	private int id;
 	private String userName;

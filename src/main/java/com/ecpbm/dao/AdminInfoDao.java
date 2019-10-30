@@ -11,7 +11,7 @@ public interface AdminInfoDao {
 
 	// 根据登录名和密码查询管理员
 	@Select("select * from admin_info where name = #{name} and pwd = #{pwd}")
-	public AdminInfo selectByNameAndPwd(AdminInfo ai);
+	AdminInfo selectByNameAndPwd(AdminInfo ai);
 
 	// 根据管理员id获取管理员对象及关联的功能集合
 	@Select("select * from admin_info where id = #{id}")

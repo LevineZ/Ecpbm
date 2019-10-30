@@ -1,5 +1,9 @@
 package com.ecpbm.pojo;
 
+/**
+ * 用于封装树形控件的节点信息
+ */
+
 import java.util.List;
 
 public class TreeNode {

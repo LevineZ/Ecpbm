@@ -1,5 +1,9 @@
 package com.ecpbm.pojo;
 
+
+/**
+ * 商品查询条件
+ */
 public class SearchProductInfo {
 	// 产品基本信息（部分）
 	private int id; // 产品编号
